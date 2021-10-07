@@ -36,7 +36,7 @@ docker build --no-cache -t timveil/cockroachdb-single-node:latest .
 ## Publishing the Image
 ```bash
 docker push timveil/cockroachdb-single-node:latest
-```s
+```
 
 ## Running the Image
 ```bash
