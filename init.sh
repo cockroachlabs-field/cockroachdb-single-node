@@ -4,9 +4,9 @@ echo "******************************* starting single cockroach node..."
 
 if [[ -n "$MEMORY_SIZE" ]];
 then
-  ./cockroach start-single-node --insecure --listen-addr=localhost --log-config-file=logs.yaml --background --store=type=mem,size=${MEMORY_SIZE}
+  ./cockroach start-single-node --insecure --log-config-file=logs.yaml --background --store=type=mem,size=${MEMORY_SIZE}
 else
-  ./cockroach start-single-node --insecure --listen-addr=localhost --log-config-file=logs.yaml --background
+  ./cockroach start-single-node --insecure --log-config-file=logs.yaml --background
 fi
 
 echo "******************************* checking DATABASE_NAME"
