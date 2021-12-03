@@ -9,6 +9,7 @@ file-defaults:
   redactable: true
   exit-on-error: true
   auditable: false
+  dir: cockroach-data/logs
 fluent-defaults:
   filter: WARNING
   format: json-fluent-compact
