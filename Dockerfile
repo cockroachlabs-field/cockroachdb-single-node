@@ -6,6 +6,7 @@ ADD init.sh /cockroach/
 RUN chmod a+x /cockroach/init.sh
 
 ADD logs.yaml /cockroach/
+ADD optimizations.sql /cockroach/
 
 WORKDIR /cockroach/
 

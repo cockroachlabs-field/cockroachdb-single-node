@@ -9,6 +9,10 @@ else
   ./cockroach start-single-node --insecure --log-config-file=logs.yaml --background
 fi
 
+echo "******************************* setting optimizations"
+
+./cockroach sql --insecure --file optimizations.sql
+
 echo "******************************* checking DATABASE_NAME"
 
 if [[ -n "$DATABASE_NAME" ]]; then
