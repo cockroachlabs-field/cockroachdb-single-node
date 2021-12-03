@@ -2,7 +2,7 @@
 
 echo "starting single cockroach node..."
 
-if [[ -n "$MEMORY_SIZE" ]]
+if [[ -n "$MEMORY_SIZE" ]];
 then
   ./cockroach start-single-node --insecure --store=type=mem,size=${MEMORY_SIZE}
 else
